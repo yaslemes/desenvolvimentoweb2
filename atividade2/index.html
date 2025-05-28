@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta CEP - Brasil API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+        <input type="text" id="cep" placeholder="Digite o CEP">
+        <button id="btn">Consultar</button>
+
+        <p id="mensagem"></p>
+
+        <div id="resultado">
+            <p>CEP: <span id="cep-res"></span></p>
+            <p>Logradouro: <span id="logradouro"></span></p>
+            <p>Bairro: <span id="bairro"></span></p>
+            <p>Cidade: <span id="cidade"></span></p>
+            <p>Estado: <span id="estado"></span></p>
+        </div>
+
+        <div class="tema-toggle">
+            <label for="tema">Modo Escuro:</label>
+            <input type="checkbox" id="tema">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
