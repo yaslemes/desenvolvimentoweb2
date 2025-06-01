@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmi:version="2.1" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.omg.org/spec/UML/20090901">
+  <uml:Model xmi:id="model_1" name="ModeloCasoDeUso">
+    <packagedElement xmi:type="uml:Actor" xmi:id="actor_1" name="Autônomo"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="usecase_1" name="Definir Preço">
+      <ownedComment xmi:id="comment_1">
+        <body><![CDATA[
+Breve Descrição:
+Define o valor cobrado por um serviço.
+
+Pré-condição: Serviço cadastrado.
+Pós-condição: Preço registrado.
+
+Fluxo Básico de Eventos:
+1. Autônomo seleciona serviço.
+2. Autônomo insere valor.
+3. Sistema valida preço (ex.: > R$0).
+4. Sistema salva o preço.
+        ]]></body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="assoc_1" memberEnd="actorEnd useCaseEnd">
+      <ownedEnd xmi:id="actorEnd" type="actor_1" association="assoc_1"/>
+      <ownedEnd xmi:id="useCaseEnd" type="usecase_1" association="assoc_1"/>
+    </packagedElement>
+  </uml:Model>
+</XMI>
